@@ -1,3 +1,6 @@
-@import './header';
-@import './hero-index';
-@import './hero-portfolio'
+@import './utils/vars';
+@import './base/reset';
+@import './layout/header';
+@import './layout/hero-index';
+@import './layout/hero-portfolio';
+@import './layout/footer'
