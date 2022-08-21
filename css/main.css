@@ -1,5 +1,5 @@
 :root {
-  --font-family2: "Raleway", sans-serif;
+  --font-family2: 'Raleway', sans-serif;
   --color1: #2196f3;
   --color2: #212121;
   --color3: #188ce8;
@@ -56,9 +56,15 @@ button {
 }
 
 body {
-  font-family: "Roboto", "Raleway", sans-serif;
+  font-family: 'Roboto', 'Raleway', sans-serif;
   color: var(--color6);
   font-size: 14px;
+}
+
+footer .bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .list {
@@ -90,7 +96,7 @@ body {
 }
 
 .current::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -99,7 +105,7 @@ body {
   height: 4px;
   background-color: var(--color1);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
 
@@ -108,8 +114,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .site-header {
@@ -128,8 +134,8 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contact-header {
@@ -142,11 +148,11 @@ body {
   margin-left: auto;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .contact-header .item + .item {
@@ -196,7 +202,7 @@ body {
 }
 
 .current::after {
-  content: "";
+  content: '';
   display: block;
   position: absolute;
   left: 0;
@@ -205,7 +211,7 @@ body {
   height: 4px;
   background-color: var(--color1);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 2px;
 }
 
@@ -221,8 +227,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: color var(--transform-time);
   transition: color var(--transform-time);
 }
@@ -239,8 +245,8 @@ body {
 .smartphone {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin-right: 10px;
   fill: currentColor;
 }
@@ -256,8 +262,16 @@ body {
   height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../picture/comand.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../picture/comand.jpg);
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(rgba(47, 48, 58, 0.4)),
+      to(rgba(47, 48, 58, 0.4))
+    ),
+    url(../picture/comand.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../picture/comand.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -303,7 +317,7 @@ body {
   min-width: 200px;
   padding: 10px 32px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   -webkit-transition: background-color var(--transform-time);
   transition: background-color var(--transform-time);
 }
@@ -337,7 +351,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: var(--card-gap);
 }
 
@@ -345,7 +359,7 @@ body {
   width: calc((100% - 3 * var(--card-gap)) / 4);
 }
 
-.features-link:not(:nth-last-child(-n+4)) {
+.features-link:not(:nth-last-child(-n + 4)) {
   margin-bottom: var(--card-gap);
 }
 
@@ -354,11 +368,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   height: 120px;
   background-color: var(--color7);
   margin-bottom: var(--card-gap);
@@ -412,11 +426,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 70px;
   background-color: rgba(47, 48, 58, 0.8);
@@ -445,7 +459,7 @@ body {
 .team-card {
   width: calc((100% - 3 * var(--card-gap)) / 4);
   -webkit-box-shadow: var(--team-card-shadow);
-          box-shadow: var(--team-card-shadow);
+  box-shadow: var(--team-card-shadow);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--color4);
 }
@@ -473,11 +487,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 10px;
 }
 
@@ -486,11 +500,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 44px;
   height: 44px;
   border-radius: 50%;
@@ -547,11 +561,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: inherit;
   border: 1px solid var(--color8);
   border-radius: 4px;
@@ -574,8 +588,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: var(--card-gap);
 }
 
@@ -589,7 +603,7 @@ body {
 /*-------MAIN (INDEX)-------*/
 .main-button-port,
 .secondary {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -607,15 +621,19 @@ body {
 .main-button-port .secondary:hover {
   color: var(--color4);
   background-color: var(--color1);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .main-button-port .secondary:focus {
   color: var(--color4);
   background-color: var(--color1);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter.list {
@@ -624,8 +642,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .filter .item + .item {
@@ -636,8 +654,10 @@ body {
 .main-button-port.secondary:focus {
   color: var(--color4);
   background-color: var(--color1);
-  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-          box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 /* ------------BUTTON-------- */
@@ -647,7 +667,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-left: calc(-1 * var(--card-gap));
   margin-top: calc(-1 * var(--card-gap));
 }
@@ -660,7 +680,7 @@ body {
 
 .examples-cards > .item {
   -ms-flex-preferred-size: calc(33.3333333333% - var(--card-gap));
-      flex-basis: calc(33.3333333333% - var(--card-gap));
+  flex-basis: calc(33.3333333333% - var(--card-gap));
   margin-left: var(--card-gap);
   margin-top: var(--card-gap);
 }
@@ -675,8 +695,10 @@ body {
 
 .work-examples .link:hover,
 .work-examples .link:focus {
-  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
-          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .three-capital-cards {
@@ -696,7 +718,7 @@ body {
 
 .leaving-item:hover .leaving-text {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
 }
 
 .card-img {
@@ -718,7 +740,7 @@ body {
   color: var(--color4);
   background-color: var(--leaving-text);
   -webkit-transform: translateY(100.15%);
-          transform: translateY(100.15%);
+  transform: translateY(100.15%);
   -webkit-transition: -webkit-transform var(--transform-time);
   transition: -webkit-transform var(--transform-time);
   transition: transform var(--transform-time);
@@ -742,12 +764,6 @@ footer {
 
 .bottom-panel .item + .item {
   margin-top: 9px;
-}
-
-footer .bottom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .footer-logotip {
@@ -863,8 +879,8 @@ footer .bottom {
 .footer-field {
   display: inline-block;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
 }
 
 .footer-mail {
@@ -873,7 +889,7 @@ footer .bottom {
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   background-color: transparent;
   padding-top: 15px;
   padding-right: 16px;
@@ -902,7 +918,7 @@ footer .bottom {
   color: var(--color4);
   margin-left: 12px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer-icon {
@@ -912,7 +928,7 @@ footer .bottom {
   top: 50%;
   right: 28px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
 /* --------FOOTER-FORm--------------- */
@@ -932,7 +948,7 @@ footer .bottom {
 
 .backdrop.is-hidden .modal-window {
   -webkit-transform: translate(0, 0) scale(0);
-          transform: translate(0, 0) scale(0);
+  transform: translate(0, 0) scale(0);
 }
 
 .modal-window {
@@ -942,11 +958,13 @@ footer .bottom {
   background-color: var(--color4);
   top: 50%;
   left: 50%;
-  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
   -webkit-transform: translate(-50%, -50%) scale(1);
-          transform: translate(-50%, -50%) scale(1);
+  transform: translate(-50%, -50%) scale(1);
   -webkit-transition: -webkit-transform var(--transform-time);
   transition: -webkit-transform var(--transform-time);
   transition: transform var(--transform-time);
@@ -960,11 +978,11 @@ footer .bottom {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   top: 8px;
   right: 8px;
   width: 30px;
@@ -1019,8 +1037,8 @@ footer .bottom {
   border-radius: 4px;
   padding: 11px 2px 11px 42px;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-transition: border var(--transform-time);
   transition: border var(--transform-time);
 }
@@ -1096,8 +1114,8 @@ footer .bottom {
 
 .agreement {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   display: block;
   font-size: 14px;
@@ -1116,7 +1134,7 @@ footer .bottom {
   top: 50%;
   left: 12px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 16px;
   height: 15px;
   color: var(--color4);
@@ -1135,7 +1153,7 @@ footer .bottom {
   padding: 0;
   white-space: nowrap;
   -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -1146,7 +1164,7 @@ footer .bottom {
   top: 50%;
   left: 12px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
   width: 16px;
   height: 15px;
   fill: white;
@@ -1184,10 +1202,14 @@ footer .bottom {
   line-height: 1.87;
   letter-spacing: 0.06em;
   color: var(--color4);
-  -webkit-transition: color var(--transform-time), background-color var(--transform-time), -webkit-box-shadow var(--transform-time);
-  transition: color var(--transform-time), background-color var(--transform-time), -webkit-box-shadow var(--transform-time);
-  transition: color var(--transform-time), background-color var(--transform-time), box-shadow var(--transform-time);
-  transition: color var(--transform-time), background-color var(--transform-time), box-shadow var(--transform-time), -webkit-box-shadow var(--transform-time);
+  -webkit-transition: color var(--transform-time), background-color var(--transform-time),
+    -webkit-box-shadow var(--transform-time);
+  transition: color var(--transform-time), background-color var(--transform-time),
+    -webkit-box-shadow var(--transform-time);
+  transition: color var(--transform-time), background-color var(--transform-time),
+    box-shadow var(--transform-time);
+  transition: color var(--transform-time), background-color var(--transform-time),
+    box-shadow var(--transform-time), -webkit-box-shadow var(--transform-time);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}/*# sourceMappingURL=main.css.map */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+} /*# sourceMappingURL=main.css.map */
