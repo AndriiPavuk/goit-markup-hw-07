@@ -369,7 +369,6 @@ footer .bottom {
   background-color: var(--color7);
   margin-bottom: var(--card-gap);
 }
-
 .features-icon svg {
   width: 70px;
   height: 70px;
@@ -778,9 +777,7 @@ footer {
   -webkit-transition: color var(--transform-time);
   transition: color var(--transform-time);
 }
-
-.footer-link-city:hover,
-.footer-link-city:focus {
+.footer-link-city:hover, .footer-link-city:focus {
   color: var(--color1);
 }
 
@@ -793,20 +790,11 @@ footer {
   -webkit-transition: color var(--transform-time);
   transition: color var(--transform-time);
 }
-
-.footer-link-connection:hover,
-.footer-link-connection:focus {
+.footer-link-connection:hover, .footer-link-connection:focus {
   color: var(--color1);
 }
 
 /* ------------COLUM-TWO---------- */
-.footer-networks {
-  min-width: 206px;
-  min-height: 80px;
-  margin-top: 12px;
-  margin-left: 70px;
-}
-
 .footer-networks {
   min-width: 206px;
   min-height: 80px;
@@ -1058,39 +1046,33 @@ footer {
   -webkit-transition: border var(--transform-time);
   transition: border var(--transform-time);
 }
-
 .comment-textarea::-webkit-input-placeholder {
   line-height: 1.14;
   color: rgba(117, 117, 117, 0.5);
   letter-spacing: 0.01;
 }
-
 .comment-textarea::-moz-placeholder {
   line-height: 1.14;
   color: rgba(117, 117, 117, 0.5);
   letter-spacing: 0.01;
 }
-
 .comment-textarea:-ms-input-placeholder {
   line-height: 1.14;
   color: rgba(117, 117, 117, 0.5);
   letter-spacing: 0.01;
 }
-
 .comment-textarea::-ms-input-placeholder {
   line-height: 1.14;
   color: rgba(117, 117, 117, 0.5);
   letter-spacing: 0.01;
 }
-
 .comment-textarea::placeholder {
   line-height: 1.14;
   color: rgba(117, 117, 117, 0.5);
   letter-spacing: 0.01;
 }
-
 .comment-textarea:focus,
-.modal-input:focus {
+.comment-textarea .modal-input:focus {
   outline: none;
 }
 

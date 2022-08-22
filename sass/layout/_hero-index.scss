@@ -105,11 +105,10 @@
   height: 120px;
   background-color: var(--color7);
   margin-bottom: var(--card-gap);
-}
-
-.features-icon svg {
+  svg {
   width: 70px;
   height: 70px;
+ }
 }
 
 .features .three-capital-features {
