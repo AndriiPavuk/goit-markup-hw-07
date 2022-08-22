@@ -292,11 +292,9 @@ footer .bottom {
   -webkit-transition: background-color var(--transform-time);
   transition: background-color var(--transform-time);
 }
-
 .main-button:focus {
   background-color: var(--color3);
 }
-
 .main-button:hover {
   background-color: var(--color3);
 }
@@ -329,7 +327,6 @@ footer .bottom {
 .features-link {
   width: calc((100% - 3 * var(--card-gap)) / 4);
 }
-
 .features-link:not(:nth-last-child(-n+4)) {
   margin-bottom: var(--card-gap);
 }
@@ -353,10 +350,6 @@ footer .bottom {
   height: 70px;
 }
 
-.features .three-capital-features {
-  margin-bottom: 10px;
-}
-
 .three-capital-features {
   text-transform: uppercase;
   font-weight: 700;
@@ -364,6 +357,9 @@ footer .bottom {
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--color2);
+}
+.features .three-capital-features {
+  margin-bottom: 10px;
 }
 
 .main-paragraph-features {
@@ -433,7 +429,6 @@ footer .bottom {
   border-radius: 0px 0px 4px 4px;
   background-color: var(--color4);
 }
-
 .team-card:not(:nth-last-child(4)) {
   margin-left: var(--card-gap);
 }
@@ -485,17 +480,15 @@ footer .bottom {
   -webkit-transition: color var(--transform-time), background-color var(--transform-time);
   transition: color var(--transform-time), background-color var(--transform-time);
 }
+.main-icon .ni-item:hover, .main-icon .ni-item:focus {
+  color: var(--color4);
+  background-color: var(--color1);
+}
 
 .ni-icon {
   fill: currentColor;
   width: 20px;
   height: 20px;
-}
-
-.main-icon .ni-item:hover,
-.main-icon .ni-item:focus {
-  color: var(--color4);
-  background-color: var(--color1);
 }
 
 /* ---------Our team--------- */
@@ -543,6 +536,11 @@ footer .bottom {
   -webkit-transition: color var(--transform-time);
   transition: color var(--transform-time);
 }
+.client-sumbol:hover, .client-sumbol:focus {
+  border: 1px solid var(--color1);
+  border-radius: 4px;
+  color: var(--color1);
+}
 
 .client-icon {
   fill: currentColor;
@@ -561,13 +559,6 @@ footer .bottom {
       -ms-flex-pack: center;
           justify-content: center;
   gap: var(--card-gap);
-}
-
-.client-sumbol:hover,
-.client-sumbol:focus {
-  border: 1px solid var(--color1);
-  border-radius: 4px;
-  color: var(--color1);
 }
 
 /*-------MAIN (INDEX)-------*/

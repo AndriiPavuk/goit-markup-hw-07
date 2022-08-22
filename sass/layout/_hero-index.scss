@@ -57,15 +57,14 @@
   padding: 10px 32px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--transform-time);
+  &:focus {
+    background-color: var(--color3);
+  }
+  &:hover {
+    background-color: var(--color3);
+  }
 }
 
-.main-button:focus {
-  background-color: var(--color3);
-}
-
-.main-button:hover {
-  background-color: var(--color3);
-}
 /* -----------CAP----------- */
 
 /* -----------FEATURES----------- */
@@ -92,11 +91,12 @@
 
 .features-link {
   width: calc((100% - (3 * var(--card-gap))) / 4);
-}
-
-.features-link:not(:nth-last-child(-n + 4)) {
+  &:not(:nth-last-child(-n + 4)) {
   margin-bottom: var(--card-gap);
 }
+}
+
+
 
 .features-icon {
   display: flex;
@@ -106,14 +106,11 @@
   background-color: var(--color7);
   margin-bottom: var(--card-gap);
   svg {
-  width: 70px;
-  height: 70px;
- }
+    width: 70px;
+    height: 70px;
+  }
 }
 
-.features .three-capital-features {
-  margin-bottom: 10px;
-}
 
 .three-capital-features {
   text-transform: uppercase;
@@ -122,6 +119,10 @@
   line-height: 1.14;
   letter-spacing: 0.03em;
   color: var(--color2);
+  .features & {
+  margin-bottom: 10px;
+}
+
 }
 
 .main-paragraph-features {
@@ -180,11 +181,12 @@
   box-shadow: var(--team-card-shadow);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--color4);
-}
-
-.team-card:not(:nth-last-child(4)) {
+  &:not(:nth-last-child(4)) {
   margin-left: var(--card-gap);
 }
+}
+
+
 
 .team-content {
   padding-top: 30px;
@@ -219,6 +221,11 @@
 .main-icon .ni-item {
   color: var(--color8);
   transition: color var(--transform-time), background-color var(--transform-time);
+  &:hover,
+  &:focus {
+  color: var(--color4);
+  background-color: var(--color1);
+}
 }
 
 .ni-icon {
@@ -226,11 +233,7 @@
   width: 20px;
   height: 20px;
 }
-.main-icon .ni-item:hover,
-.main-icon .ni-item:focus {
-  color: var(--color4);
-  background-color: var(--color1);
-}
+
 /* ---------Our team--------- */
 .two-capital {
   font-weight: 700;
@@ -268,6 +271,12 @@
   border-radius: 4px;
   color: var(--color8);
   transition: color var(--transform-time);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--color1);
+    border-radius: 4px;
+    color: var(--color1);
+  }
 }
 
 .client-icon {
@@ -283,13 +292,6 @@
   display: flex;
   justify-content: center;
   gap: var(--card-gap);
-}
-
-.client-sumbol:hover,
-.client-sumbol:focus {
-  border: 1px solid var(--color1);
-  border-radius: 4px;
-  color: var(--color1);
 }
 
 /*-------MAIN (INDEX)-------*/
