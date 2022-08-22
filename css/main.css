@@ -817,9 +817,7 @@ footer {
   -webkit-transition: color var(--transform-time), background-color var(--transform-time);
   transition: color var(--transform-time), background-color var(--transform-time);
 }
-
-.footer-ni .ni-item:hover,
-.footer-ni .ni-item:focus {
+.footer-ni .ni-item:hover, .footer-ni .ni-item:focus {
   background-color: var(--color1);
 }
 
@@ -918,11 +916,6 @@ footer {
   transition: opacity var(--transform-time), visibility var(--transform-time);
 }
 
-.backdrop.is-hidden .modal-window {
-  -webkit-transform: translate(0, 0) scale(0);
-          transform: translate(0, 0) scale(0);
-}
-
 .modal-window {
   position: absolute;
   width: 528px;
@@ -940,6 +933,10 @@ footer {
   transition: transform var(--transform-time);
   transition: transform var(--transform-time), -webkit-transform var(--transform-time);
   padding: 40px 39px 40px 41px;
+}
+.backdrop.is-hidden .modal-window {
+  -webkit-transform: translate(0, 0) scale(0);
+          transform: translate(0, 0) scale(0);
 }
 
 .modal-button {
@@ -999,6 +996,9 @@ footer {
   display: block;
   margin-bottom: 10px;
 }
+.modal-label:focus-within > .form-icon {
+  fill: var(--color1);
+}
 
 .modal-input {
   width: 100%;
@@ -1011,6 +1011,9 @@ footer {
           align-items: center;
   -webkit-transition: border var(--transform-time);
   transition: border var(--transform-time);
+}
+.modal-input:focus-within {
+  border: 1px solid var(--color1);
 }
 
 .label {
@@ -1046,6 +1049,9 @@ footer {
   -webkit-transition: border var(--transform-time);
   transition: border var(--transform-time);
 }
+.comment-textarea:focus-within {
+  border: 1px solid var(--color1);
+}
 .comment-textarea::-webkit-input-placeholder {
   line-height: 1.14;
   color: rgba(117, 117, 117, 0.5);
@@ -1071,8 +1077,9 @@ footer {
   color: rgba(117, 117, 117, 0.5);
   letter-spacing: 0.01;
 }
+
 .comment-textarea:focus,
-.comment-textarea .modal-input:focus {
+.modal-input:focus {
   outline: none;
 }
 
@@ -1107,6 +1114,14 @@ footer {
   -webkit-transition: color var(--transform-time), background-color var(--transform-time);
   transition: color var(--transform-time), background-color var(--transform-time);
 }
+.checkbox:checked + .agreement-checkmark {
+  background-position: center;
+  background-size: contain;
+  background-origin: border-box;
+  border-color: var(--color1);
+  background-color: var(--color1);
+  background-image: url(../picture/icon-check.svg);
+}
 
 .visuall-hidden {
   position: absolute;
@@ -1136,27 +1151,6 @@ footer {
   border-radius: 2px;
   -webkit-transition: color var(--transform-time), background-color var(--transform-time);
   transition: color var(--transform-time), background-color var(--transform-time);
-}
-
-.checkbox:checked + .agreement-checkmark {
-  background-position: center;
-  background-size: contain;
-  background-origin: border-box;
-  border-color: var(--color1);
-  background-color: var(--color1);
-  background-image: url(../picture/icon-check.svg);
-}
-
-.modal-label:focus-within > .form-icon {
-  fill: var(--color1);
-}
-
-.modal-input:focus-within {
-  border: 1px solid var(--color1);
-}
-
-.comment-textarea:focus-within {
-  border: 1px solid var(--color1);
 }
 
 .form-button {
