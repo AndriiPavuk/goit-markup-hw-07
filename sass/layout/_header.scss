@@ -9,19 +9,6 @@
   width: 1200px;
 }
 
-.current::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--color1);
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-  border-radius: 2px;
-}
-
 .header-nav {
   display: flex;
   align-items: center;
@@ -30,17 +17,15 @@
 .site-header {
   display: flex;
   margin-left: 93px;
-}
-
-.site-header .item:not(:last-child) {
-  margin-right: 50px;
-}
-
-.site-header .header-link .header-contact {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  align-items: center;
+  & .item:not(:last-child) {
+    margin-right: 50px;
+  }
+  & .header-link .header-contact {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    align-items: center;
+  }
 }
 
 .contact-header {
@@ -84,32 +69,29 @@
   padding: 32px 0;
   display: block;
   transition: color var(--transform-time);
-}
-
-.header-link:hover {
-  color: var(--color1);
-}
-
-.header-link:focus {
-  color: var(--color1);
+  &:hover {
+    color: var(--color1);
+  }
+  &:focus {
+    color: var(--color1);
+  }
 }
 
 .current {
   color: var(--color1);
   position: relative;
-}
-
-.current::after {
-  content: '';
-  display: block;
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 4px;
-  background-color: var(--color1);
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
-  border-radius: 2px;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: var(--color1);
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%);
+    border-radius: 2px;
+  }
 }
 
 .header-contact {
@@ -123,14 +105,13 @@
   display: flex;
   align-items: center;
   transition: color var(--transform-time);
-}
+  &:hover {
+    color: var(--color1);
+  }
 
-.header-contact:hover {
-  color: var(--color1);
-}
-
-.header-contact:focus {
-  color: var(--color1);
+  &:focus {
+    color: var(--color1);
+  }
 }
 
 .envelope,
