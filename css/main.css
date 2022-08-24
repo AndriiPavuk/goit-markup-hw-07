@@ -248,7 +248,7 @@ footer .bottom {
 }
 
 /*------------HEADER (INDEX & PORTFOLIO)-----------*/
-.main-sctn-one {
+.sctn-one {
   text-align: center;
   background-color: #c4c4c4;
   padding: 200px 0;
@@ -275,7 +275,7 @@ footer .bottom {
   border: 0;
 }
 
-.one-capital {
+.business__capital {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -290,7 +290,7 @@ footer .bottom {
   margin-right: auto;
 }
 
-.main-button {
+.business__button {
   font-style: inherit;
   background-color: var(--color1);
   font-weight: 700;
@@ -307,10 +307,10 @@ footer .bottom {
   -webkit-transition: background-color var(--transform-time);
   transition: background-color var(--transform-time);
 }
-.main-button:focus {
+.business__button:focus {
   background-color: var(--color3);
 }
-.main-button:hover {
+.business__button:hover {
   background-color: var(--color3);
 }
 
