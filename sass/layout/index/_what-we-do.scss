@@ -1,16 +1,16 @@
-.main-sctn-three {
+.sctn-three {
   padding-top: 0;
 }
 
-.wwd {
+.development__list {
   display: flex;
 }
 
-.wwd > .wwd-item + .wwd-item {
+.development__list > .development__item + .development__item {
   margin-left: var(--card-gap);
 }
 
-.label-item {
+.development__label {
   position: absolute;
   bottom: 0;
   pointer-events: none;
@@ -22,10 +22,19 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.label-text {
+.development__label-text {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--color4);
+}
+.development__capital {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color2);
+  margin-bottom: 50px;
 }
