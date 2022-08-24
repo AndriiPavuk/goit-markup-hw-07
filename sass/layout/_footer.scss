@@ -4,11 +4,11 @@ footer {
   display: flex;
 }
 
-.footer-data__panel .footer-data__item + .footer-data__item {
+.panel .panel__item + .panel__item {
   margin-top: 9px;
 }
 
-.footer-data__logotip {
+.logotip {
   text-decoration: none;
   font-family: var(--font-family2);
   font-weight: 700;
@@ -22,7 +22,7 @@ footer {
   }
 }
 
-.footer-data__logotip-two {
+.logotip-two {
   font-family: var(--font-family2);
   font-weight: 700;
   font-size: 26px;
@@ -31,7 +31,7 @@ footer {
   color: var(--color4);
 }
 
-.footer-data__city {
+.panel__city {
   text-decoration: none;
   font-weight: 400;
   line-height: 1.71;
@@ -44,7 +44,7 @@ footer {
   }
 }
 
-.footer-data__connection {
+.panel__connection {
   text-decoration: none;
   font-weight: 400;
   line-height: 1.71;
