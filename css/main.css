@@ -104,16 +104,25 @@ footer .bottom {
           align-items: center;
 }
 
-.site-header {
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navigation__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-left: 93px;
 }
-.site-header .item:not(:last-child) {
+.navigation__list .navigation__item:not(:last-child) {
   margin-right: 50px;
 }
-.site-header .header-link .header-contact {
+.navigation__list .navigation__link .header-contact {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -122,7 +131,7 @@ footer .bottom {
           align-items: center;
 }
 
-.contact-header {
+.contacts {
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
@@ -139,12 +148,12 @@ footer .bottom {
           align-items: center;
 }
 
-.contact-header .item + .item {
+.contacts .contacts__item + .contacts__item {
   margin-left: 50px;
 }
 
 /* --------------BOX---------------- */
-.header-logotip {
+.navigation__logotip {
   text-decoration: none;
   font-family: var(--font-family2);
   font-style: normal;
@@ -155,11 +164,11 @@ footer .bottom {
   color: var(--color1);
 }
 
-.header-logotip-two {
+.navigation__logotip-two {
   color: #000000;
 }
 
-.header-link {
+.navigation__link {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -171,10 +180,10 @@ footer .bottom {
   -webkit-transition: color var(--transform-time);
   transition: color var(--transform-time);
 }
-.header-link:hover {
+.navigation__link:hover {
   color: var(--color1);
 }
-.header-link:focus {
+.navigation__link:focus {
   color: var(--color1);
 }
 
@@ -196,7 +205,7 @@ footer .bottom {
   border-radius: 2px;
 }
 
-.header-contact {
+.contacts__general {
   text-decoration: none;
   font-style: normal;
   font-weight: 500;
@@ -213,15 +222,15 @@ footer .bottom {
   -webkit-transition: color var(--transform-time);
   transition: color var(--transform-time);
 }
-.header-contact:hover {
+.contacts__general:hover {
   color: var(--color1);
 }
-.header-contact:focus {
+.contacts__general:focus {
   color: var(--color1);
 }
 
-.envelope,
-.smartphone {
+.contacts__envelope,
+.contacts__smartphone {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
