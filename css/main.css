@@ -319,7 +319,7 @@ footer .bottom {
   padding-bottom: 94px;
 }
 
-.section-title {
+.features__title {
   margin-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -328,7 +328,7 @@ footer .bottom {
   text-align: center;
 }
 
-.features {
+.features__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,14 +337,14 @@ footer .bottom {
   gap: var(--card-gap);
 }
 
-.features-link {
+.features__link {
   width: calc((100% - 3 * var(--card-gap)) / 4);
 }
-.features-link:not(:nth-last-child(-n+4)) {
+.features__link:not(:nth-last-child(-n+4)) {
   margin-bottom: var(--card-gap);
 }
 
-.features-icon {
+.features__icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -358,12 +358,12 @@ footer .bottom {
   background-color: var(--color7);
   margin-bottom: var(--card-gap);
 }
-.features-icon svg {
+.features__icon svg {
   width: 70px;
   height: 70px;
 }
 
-.three-capital-features {
+.features__three-capital {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
@@ -371,11 +371,11 @@ footer .bottom {
   letter-spacing: 0.03em;
   color: var(--color2);
 }
-.features .three-capital-features {
+.features .features__three-capital {
   margin-bottom: 10px;
 }
 
-.main-paragraph-features {
+.features__paragraph {
   font-weight: 400;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -1138,4 +1138,28 @@ footer .bottom {
   transition: color var(--transform-time), background-color var(--transform-time), box-shadow var(--transform-time), -webkit-box-shadow var(--transform-time);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.modal-two-button {
+  font-style: inherit;
+  background-color: var(--color1);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--color4);
+  border-radius: 4px;
+  border: none;
+  min-width: 200px;
+  padding: 10px 32px;
+  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  -webkit-transition: background-color var(--transform-time);
+  transition: background-color var(--transform-time);
+}
+.modal-two-button:focus {
+  background-color: var(--color3);
+}
+.modal-two-button:hover {
+  background-color: var(--color3);
 }/*# sourceMappingURL=main.css.map */
