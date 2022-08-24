@@ -24,32 +24,28 @@
     <link rel="stylesheet" href="./css/modern-normalize.css" />
   </head>
   <body>
-    <header>
-      <div class="container header-nav">
-        <nav class="header-nav">
-          <a href="" class="header-logotip">Web<span class="header-logotip-two">Studio</span> </a>
-          <ul class="site-header list">
-            <li class="item">
-              <a href="./index.html" class="header-link">Студия</a>
-            </li>
-            <li class="item">
-              <a href="./portfolio.html" class="header-link current">Портфолио</a>
-            </li>
-            <li class="item"><a href="" class="header-link">Контакты</a></li>
+    <header class="header">
+      <div class="header-nav container">
+        <nav class="navigation">
+          <a href="" class="navigation__logotip">Web<span class="navigation__logotip-two">Studio</span> </a>
+          <ul class="navigation__list list">
+            <li class="navigation__item"><a href="./index.html" class="navigation__link">Студия</a></li>
+            <li class="navigation__item"><a href="./portfolio.html" class="navigation__link current">Портфолио</a></li>
+            <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
           </ul>
         </nav>
-        <ul class="contact-header list">
-          <li class="item">
-            <a href="mailto:info@devstudio.com" class="header-contact header-mail">
-              <svg width="16" height="12" class="envelope">
+        <ul class="contacts list">
+          <li class="contacts__item">
+            <a href="mailto:info@devstudio.com" class="contacts__general contacts__mail">
+              <svg width="16px" height="12px" class="contacts__envelope">
                 <use href="./picture/symbol-defs.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com</a
-            >
+              info@devstudio.com
+            </a>
           </li>
-          <li class="item">
-            <a href="tel:+380961111111" class="header-contact header-tel">
-              <svg width="10" height="16" class="smartphone">
+          <li class="contacts__item">
+            <a href="tel:+380961111111" class="contacts__general contacts__tel">
+              <svg width="10px" height="16px" class="contacts__smartphone">
                 <use href="./picture/symbol-defs.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
@@ -211,69 +207,70 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="container bottom">
-        <div>
-          <a href="" class="footer-logotip">Web<span class="footer-logotip-two">Studio</span></a>
-          <ul class="bottom-panel list">
-            <li class="item">
-              <a href="https://goo.gl/maps/jSjdEzmFh8AjKpox9" class="footer-link-city"
+      <div class="bottom container">
+        <div class="foooter-data">
+          <a href="" class="footer-data__logotip">Web<span class="footer-data__logotip-two">Studio</span></a>
+          <ul class="footer-data__panel list">
+            <li class="footer-data__item">
+              <a href="https://goo.gl/maps/jSjdEzmFh8AjKpox9" class="footer-data__city"
                 >г. Киев, пр-т Леси Украинки, 26</a
               >
             </li>
-            <li class="item">
-              <a href="mailto:info@example.com" class="footer-link-connection">info@example.com</a>
+            <li class="footer-data__item">
+              <a href="mailto:info@example.com" class="footer-data__connection">info@example.com</a>
             </li>
-            <li class="item">
-              <a href="tel:+380991111111" class="footer-link-connection">+38 099 111 11 11</a>
+            <li class="footer-data__item">
+              <a href="tel:+380991111111" class="footer-data__connection">+38 099 111 11 11</a>
             </li>
           </ul>
         </div>
-        <div class="footer-networks">
-          <h3 class="footer-title">присоединяйтесь</h3>
+        <!--COLUM TWO-->
+        <div class="networks">
+          <h3 class="networks__title">присоединяйтесь</h3>
           <div class="footer-ni">
-            <ul class="list network-icon">
-              <li class="ni-list">
+            <ul class="list footer-ni__icon">
+              <li class="footer-ni__list">
                 <a
                   href="https://instagram.com"
                   target="_blank"
                   rel="noreferrer noopener nofollow"
-                  class="ni-item"
+                  class="footer-ni__item"
                 >
-                  <svg class="ni-icon">
+                  <svg class="footer-ni__icon">
                     <use href="./picture/symbol-defs.svg#icon-instagram"></use></svg
                 ></a>
               </li>
-              <li class="ni-list">
+              <li class="footer-ni__list">
                 <a
                   href="https://twitter.com/"
                   target="_blank"
                   rel="noreferrer noopener nofollow"
-                  class="ni-item"
+                  class="footer-ni__item"
                 >
-                  <svg class="ni-icon">
+                  <svg class="footer-ni__icon">
                     <use href="./picture/symbol-defs.svg#icon-twitter"></use></svg
                 ></a>
               </li>
-              <li class="ni-list">
+              <li class="footer-ni__list">
                 <a
                   href="https://uk-ua.facebook.com"
                   target="_blank"
                   rel="noreferrer noopener nofollow"
-                  class="ni-item"
+                  class="footer-ni__item"
                 >
-                  <svg class="ni-icon">
+                  <svg class="footer-ni__icon">
                     <use href="./picture/symbol-defs.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="ni-list">
+              <li class="footer-ni__list">
                 <a
                   href="https://www.linkedin.com/"
                   target="_blank"
                   rel="noreferrer noopener nofollow"
-                  class="ni-item"
+                  class="footer-ni__item"
                 >
-                  <svg class="ni-icon">
+                  <svg class="footer-ni__icon">
                     <use href="./picture/symbol-defs.svg#icon-linkedin"></use>
                   </svg>
                 </a>
@@ -281,22 +278,23 @@
             </ul>
           </div>
         </div>
-        <div class="footer-subscribe">
-          <p class="footer-mailing">Подпишитесь на рассылку</p>
-          <form class="footer-form">
-            <div class="footer-field">
+        <!--FOOTER-FORM-->
+        <div class="subscribe">
+          <p class="subscribe__mailing">Подпишитесь на рассылку</p>
+          <form class="subscribe__form">
+            <div class="subscribe__field">
               <input
-                class="footer-mail"
+                class="subscribe__mail"
                 type="email"
                 name="email"
                 id="email"
                 placeholder="E-mail"
               />
             </div>
-            <div class="footer-btn">
-              <button class="footer-button" type="submit">
+            <div class="btn">
+              <button class="btn__button" type="submit">
                 Подписаться
-                <svg class="footer-icon" width="24" height="24">
+                <svg class="btn__icon" width="24" height="24">
                   <use href="./picture/form-icon.svg#icon-icon-send"></use>
                 </svg>
               </button>
