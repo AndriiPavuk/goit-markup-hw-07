@@ -61,6 +61,14 @@ body {
   font-size: 14px;
 }
 
+footer {
+  background-color: var(--color5);
+  padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 footer .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,8 +248,6 @@ footer .bottom {
 }
 
 /*------------HEADER (INDEX & PORTFOLIO)-----------*/
-/*------------MAIN (INDEX)------------*/
-/* -----------CAP----------- */
 .main-sctn-one {
   text-align: center;
   background-color: #c4c4c4;
@@ -308,8 +314,6 @@ footer .bottom {
   background-color: var(--color3);
 }
 
-/* -----------CAP----------- */
-/* -----------FEATURES----------- */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -377,8 +381,6 @@ footer .bottom {
   letter-spacing: 0.03em;
 }
 
-/* -----------FEATURES----------- */
-/* ------------WhatWeDo---------- */
 .main-sctn-three {
   padding-top: 0;
 }
@@ -419,8 +421,6 @@ footer .bottom {
   color: var(--color4);
 }
 
-/* ------------WhatWeDo---------- */
-/* ---------Our team--------- */
 .maun-sctn-four {
   background-color: var(--color7);
 }
@@ -500,7 +500,6 @@ footer .bottom {
   height: 20px;
 }
 
-/* ---------Our team--------- */
 .two-capital {
   font-weight: 700;
   font-size: 36px;
@@ -527,7 +526,6 @@ footer .bottom {
   margin-bottom: 16px;
 }
 
-/* -----MAIN-CLIENTS------ */
 .client-sumbol {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -570,7 +568,6 @@ footer .bottom {
   gap: var(--card-gap);
 }
 
-/*-------MAIN (INDEX)-------*/
 .main-button-port,
 .secondary {
   font-family: "Roboto", sans-serif;
@@ -610,8 +607,6 @@ footer .bottom {
   margin-left: 8px;
 }
 
-/* ------------BUTTON-------- */
-/* -----------CARDS--------- */
 .examples-cards {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -694,15 +689,6 @@ footer .bottom {
   overflow: auto;
 }
 
-/*------------MAIN (PORTFOLIO)------------*/
-footer {
-  background-color: var(--color5);
-  padding: 60px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 .panel .panel__item + .panel__item {
   margin-top: 9px;
 }
@@ -756,7 +742,6 @@ footer {
   color: var(--color1);
 }
 
-/* ------------COLUM-TWO---------- */
 .networks {
   min-width: 206px;
   min-height: 80px;
@@ -787,9 +772,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 10px;
 }
 
@@ -814,7 +796,6 @@ footer {
   height: 20px;
 }
 
-/* --------FOOTER-FORm--------------- */
 .subscribe {
   width: 570px;
   margin-left: auto;
@@ -894,8 +875,6 @@ footer {
           transform: translateY(-50%);
 }
 
-/* --------FOOTER-FORm--------------- */
-/*-------FOOTER (INDEX & PORTFOLIO)-----*/
 /* ---------Modal Window--------------- */
 .backdrop {
   position: fixed;
