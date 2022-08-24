@@ -1,4 +1,4 @@
-.client-sumbol {
+.main-clients__sumbol {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,17 +15,27 @@
   }
 }
 
-.client-icon {
+.main-clients__icon {
   fill: currentColor;
 }
 
-.main-client {
+.main-clients__item {
   width: calc(100% - (5 * var(--card-gap)) / 6);
   height: 92px;
 }
 
-.clients-list {
+.main-clients__list {
   display: flex;
   justify-content: center;
   gap: var(--card-gap);
+}
+
+.main-clients__capital {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color2);
+  margin-bottom: 50px;
 }
