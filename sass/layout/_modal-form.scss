@@ -29,7 +29,7 @@
   }
 }
 
-.modal-button {
+.modal-window__button {
   position: absolute;
   display: flex;
   justify-content: center;
@@ -44,7 +44,7 @@
   cursor: pointer;
 }
 
-.modal-icon {
+.modal-window__icon {
   width: 18px;
   height: 18px;
 }
@@ -55,7 +55,7 @@
   pointer-events: none;
 }
 
-.modal-title {
+.modal-window__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -74,16 +74,16 @@
   text-align: center;
 }
 
-.modal-label {
+.modal-form__label {
   position: relative;
   display: block;
   margin-bottom: 10px;
-  &:focus-within > .form-icon {
+  &:focus-within > .modal-form__icon {
     fill: var(--color1);
   }
 }
 
-.modal-input {
+.modal-form__input {
   width: 100%;
   height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -96,7 +96,7 @@
   }
 }
 
-.label {
+.modal-form__text-label {
   display: block;
   text-align: left;
   font-weight: 400;
@@ -107,7 +107,7 @@
   margin-bottom: 4px;
 }
 
-.form-icon {
+.modal-form__icon {
   position: absolute;
   top: 50%;
   left: 12px;
@@ -116,7 +116,7 @@
   transition: fill var(--transform-time);
 }
 
-.comment-textarea {
+.modal-form__textarea {
   width: 100%;
   height: 120px;
   resize: none;
@@ -135,12 +135,12 @@
     letter-spacing: 0.01;
   }
 }
-.comment-textarea:focus,
-.modal-input:focus {
+.modal-form__textarea:focus,
+.modal-form__input:focus {
   outline: none;
 }
 
-.agreement {
+.modal-form__agreement {
   align-items: center;
   position: relative;
   display: block;
@@ -149,12 +149,12 @@
   margin-bottom: 30px;
 }
 
-.agreement-link {
+.modal-form__agreement-link {
   color: var(--color1);
   text-decoration: underline;
 }
 
-.checkbox {
+.modal-form__checkbox {
   position: absolute;
   display: inline-block;
   top: 50%;
@@ -166,7 +166,7 @@
   border: 2px solid var(--color2);
   border-radius: 2px;
   transition: color var(--transform-time), background-color var(--transform-time);
-  &:checked + .agreement-checkmark {
+  &:checked + .modal-form__checkmark {
     background-position: center;
     background-size: contain;
     background-origin: border-box;
@@ -189,7 +189,7 @@
   overflow: hidden;
 }
 
-.agreement-checkmark {
+.modal-form__checkmark {
   position: absolute;
   display: inline-block;
   top: 50%;
@@ -203,19 +203,9 @@
   transition: color var(--transform-time), background-color var(--transform-time);
 }
 
-.form-button {
-  width: 200px;
-  padding: 10px 55px;
-  font-weight: 700;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-  color: var(--color4);
-  transition: color var(--transform-time), background-color var(--transform-time),
-    box-shadow var(--transform-time);
-  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
-}
 
-.modal-two-button {
+
+.modal-form__button {
   font-style: inherit;
   background-color: var(--color1);
   font-weight: 700;

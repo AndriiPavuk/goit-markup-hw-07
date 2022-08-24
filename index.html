@@ -541,51 +541,51 @@
     </footer>
     <div class="backdrop is-hidden" data-modal>
       <div class="modal-window">
-        <button type="button" class="modal-button" data-modal-close>
-          <svg class="modal-icon">
+        <button type="button" class="modal-window__button" data-modal-close>
+          <svg class="modal-window__icon">
             <use href="./picture/modal-icon.svg#icon-close-black"></use>
           </svg>
         </button>
-        <h2 class="modal-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <h2 class="modal-window__title">Оставьте свои данные, мы вам перезвоним</h2>
         <form class="modal-form" autocomplete="off">
-          <label class="modal-label">
-            <span class="label">Имя</span>
-            <input type="text" class="modal-input" name="name" required autofocus placeholder="" />
-            <svg class="form-icon">
+          <label class="modal-form__label">
+            <span class="modal-form__text-label">Имя</span>
+            <input type="text" class="modal-form__input" name="name" required autofocus placeholder="" />
+            <svg class="modal-form__icon">
               <use href="./picture/form-icon.svg#icon-person-black"></use>
             </svg>
           </label>
-          <label class="modal-label">
-            <span class="label">Телефон</span>
-            <input type="tel" class="modal-input" name="tel" required placeholder="" />
-            <svg class="form-icon">
+          <label class="modal-form__label">
+            <span class="modal-form__text-label">Телефон</span>
+            <input type="tel" class="modal-form__input" name="tel" required placeholder="" />
+            <svg class="modal-form__icon">
               <use href="./picture/form-icon.svg#icon-phone-black"></use>
             </svg>
           </label>
-          <label class="modal-label">
-            <span class="label">Почта</span>
-            <input type="email" class="modal-input" name="email" required placeholder="" />
-            <svg class="form-icon">
+          <label class="modal-form__label">
+            <span class="modal-form__text-label">Почта</span>
+            <input type="email" class="modal-form__input" name="email" required placeholder="" />
+            <svg class="modal-form__icon">
               <use href="./picture/form-icon.svg#icon-email-black"></use>
             </svg>
           </label>
-          <label class="modal-comment">
-            <span class="label">Комментарий</span>
+          <label class="modal-form__comment">
+            <span class="modal-form__text-label">Комментарий</span>
             <textarea
-              class="comment-textarea"
+              class="modal-form__textarea"
               name="comment"
               placeholder="Введите текст"
             ></textarea>
           </label>
-          <label class="agreement">
+          <label class="modal-form__agreement">
             Соглашаюсь с рассылкой и принимаю
-            <a href="https://www.google.com/logos/2010/pacman10-i.html" class="agreement-link"
+            <a href="https://www.google.com/logos/2010/pacman10-i.html" class="modal-form__agreement-link"
               >Условия договора</a
             >
-            <input class="checkbox visuall-hidden" type="checkbox" name="contract-policy" />
-            <span class="agreement-checkmark"></span>
+            <input class="modal-form__checkbox visuall-hidden" type="checkbox" name="contract-policy" />
+            <span class="modal-form__checkmark"></span>
           </label>
-          <button type="submit" class="modal-two-button form-button">Отправить</button>
+          <button type="submit" class="modal-form__button">Отправить</button>
         </form>
       </div>
     </div>
