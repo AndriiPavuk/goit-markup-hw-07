@@ -431,42 +431,40 @@ footer .bottom {
   margin-bottom: 50px;
 }
 
-.maun-sctn-four {
+.sctn-four {
   background-color: var(--color7);
 }
+.sctn-four .team__three-capital {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.sctn-four .team__paragraph {
+  text-align: center;
+}
 
-.team-set {
+.team__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.team-card {
+.team__card {
   width: calc((100% - 3 * var(--card-gap)) / 4);
   -webkit-box-shadow: var(--team-card-shadow);
           box-shadow: var(--team-card-shadow);
   border-radius: 0px 0px 4px 4px;
   background-color: var(--color4);
 }
-.team-card:not(:nth-last-child(4)) {
+.team__card:not(:nth-last-child(4)) {
   margin-left: var(--card-gap);
 }
 
-.team-content {
+.team__content {
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-.maun-sctn-four .three-capital-team {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.maun-sctn-four .main-paragraph-team {
-  text-align: center;
-}
-
-.network-icon {
+.team__list-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -479,7 +477,7 @@ footer .bottom {
   gap: 10px;
 }
 
-.ni-item {
+.team__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -494,23 +492,23 @@ footer .bottom {
   border-radius: 50%;
 }
 
-.main-icon .ni-item {
+.team__icon .team__item {
   color: var(--color8);
   -webkit-transition: color var(--transform-time), background-color var(--transform-time);
   transition: color var(--transform-time), background-color var(--transform-time);
 }
-.main-icon .ni-item:hover, .main-icon .ni-item:focus {
+.team__icon .team__item:hover, .team__icon .team__item:focus {
   color: var(--color4);
   background-color: var(--color1);
 }
 
-.ni-icon {
+.team__svg-icon {
   fill: currentColor;
   width: 20px;
   height: 20px;
 }
 
-.two-capital {
+.team__capital {
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
@@ -520,7 +518,7 @@ footer .bottom {
   margin-bottom: 50px;
 }
 
-.three-capital-team {
+.team__three-capital {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.18;
@@ -528,7 +526,7 @@ footer .bottom {
   color: var(--color2);
 }
 
-.main-paragraph-team {
+.team__paragraph {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.18;
